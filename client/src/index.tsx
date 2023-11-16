@@ -10,12 +10,12 @@ import { Register } from './pages/register';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 import { Auth } from './features/auth/auth';
-import { Emploees } from './pages/employees';
+import { Comments } from './pages/comments';
 
 const router = createBrowserRouter([
   {
     path: Paths.home,
-    element: <Emploees />
+    element: <Comments />
   },
   {
     path: Paths.login,

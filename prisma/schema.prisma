@@ -11,14 +11,14 @@ datasource db {
 }
 
 model User {
-  id              String     @id @default(uuid())
-  email           String
-  password        String
-  name            String
-  createdEmployee Employee[]
+  id             String    @id @default(uuid())
+  email          String
+  password       String
+  name           String
+  createdComment Comment[]
 }
 
-model Employee {
+model Comment {
   id      String @id @default(uuid())
   comment String
   user    User   @relation(fields: [userId], references: [id])
